@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 align="center" style="background: #DB7093; color: #FFD700">Welcome To Instameter</h1>
+	<table align="center" width="50%">
+
+	<form method="post" action="terima.php">
+		<td style="color: #DB7093">Username :</td>
+		<td><input type="text" name="username" value="" required=""></td>
+	<tr>
+		<td style="color: #DB7093">Password :</td>
+		<td><input type="password" name="password" value="" required=""></td>
+	</tr>
+
+	<!! radio>
+	<tr>
+		<td style="color: #DB7093">Gender &nbsp :</td>
+		<td><input type="radio" name="gender"/> Male </td>
+		<td><input type="radio" name="gender"> Female </td>
+	</tr>  <!! apabila ingin default checked, maka setelah name diberi tulisan checked>
+
+	<!! text area>
+	<tr>
+		<td style="color: #DB7093">Note &nbsp &nbsp :</td>
+		<td><textarea name="note" rows="10" cols="15"></textarea></td>
+	</tr>
+	
+	<!! checkbox>
+	<tr>
+		<td rowspan = "4" style="color: #DB7093">Skill &nbsp &nbsp: </td>
+		<td><input type="checkbox" name="skill" value="Photography">Photography</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="skill" value="Editing">Editing</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="skill" value="Web Design">Web Design</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="skill" value="Other">Other</td>
+	</tr>
+
+	<!! combo box>
+	<tr>
+		<td style="color: #DB7093">Language : </td>
+		<td>
+			<select name="language">
+				<option value="Indonesian">Indonesian</option>
+				<option value="US">English (US)</option>
+				<option value="UK" selected>English (UK)</option>
+				<option value="Japanese">Japanese</option>
+			</select> <!! selected sama fungsinya dengan checked>
+		</td>
+	</tr>
+
+	<!! upload file>
+	<tr>
+	<td style="color: #DB7093">Avatar &nbsp : </td>
+	<td>
+	<form action="terima.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="myfile" />
+		<input type="submit" name="upload" value="Upload" />
+	</form>
+	</td>
+	</tr>
+
+	<!! radio>
+	<tr>
+		<form method="post" action="terima.php">
+		<td><input type="reset" value="Reset"></td>
+		<td><input type="submit" value="Login"></td>
+		</form>
+	</tr>
+	
+	</form>
+	
+	</table>
+	
+</body>
+</html>

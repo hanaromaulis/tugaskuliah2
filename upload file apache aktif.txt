@@ -1,0 +1,4 @@
+upload file
+
+$uploaddir = 'uploads/';
+$uploadfile = $uploaddir . $_FILES('fo
